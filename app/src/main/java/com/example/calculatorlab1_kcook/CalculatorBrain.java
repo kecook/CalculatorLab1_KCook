@@ -7,20 +7,20 @@ import java.util.ArrayList;
 public class CalculatorBrain {
     ArrayList<String> calcArray = new ArrayList<>();
 
-//    private String operator;
+
     private Double finalResult;
-    private Double getResult;
+
 
     void pushToArray(String val) {
         calcArray.add(val);
     }
 
-    void clearArray(){
+    void clearArray() {
         calcArray.clear();
         Log.d("my calcArray", "Cal" + calcArray.toString() + "");
     }
 
-    
+
     double calculate() {
 
 
@@ -40,7 +40,7 @@ public class CalculatorBrain {
     }
 
 
-    double getResult ( double firstNum, double secondNum, String operator){
+    double getResult(double firstNum, double secondNum, String operator) {
         switch (operator) {
             case "+":
                 return firstNum + secondNum;
@@ -55,12 +55,6 @@ public class CalculatorBrain {
                 return 0;
         }
 
-        //I want to take the answer from calculate and put that in position 0 in the calcArray then go through the array again until only one thing is left inside
 
     }
-
-//    void printarray () {
-//        Log.d("my array is", "Cal" + calcArray.toString() + "");
-//    }
-
 }
